@@ -6,8 +6,8 @@ player = new Object();
 
 player.x = null;        
 player.y = null;
-player.width = 50;                  
-player.height = 50;                 
+player.width = 32;                  
+player.height = 32;                 
 player.image = new Image();
 player.image.src = "Assets/sprite_left0.png";
 player.health = 100;
@@ -111,5 +111,3 @@ player.move = function(x, y)
     player.x += player.velX ;
     player.y += player.velY;
 };
-
-
