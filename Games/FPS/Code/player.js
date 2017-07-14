@@ -1,11 +1,11 @@
 player = new Object();
-
-player.x = null;
-player.y = null;
+player.isAttacking = false
+player.x = viewport.width/2;
+player.y = viewport.height/2;
 player.image = new Image();
-player.image.src = "";
-player.width = 32;
-player.height = 32;
+player.image.src = "Assets/ZippyZebra_deer.png";
+player.width = 250;
+player.height = 250;
 
 
 player.draw = function()
@@ -31,5 +31,5 @@ player.move = function(x, y)
 
 player.attack = function()
 {
-
+	player.isAttacking = true
 };

@@ -8,7 +8,7 @@ function Exit()
     this.width = 32;
     this.height = 32;
     this.image = new Image();
-    this.image.src = "";
+    this.image.src = "Assets/ZippyZebra_exit.png";
 
     this.draw = function()
     {
@@ -18,8 +18,8 @@ function Exit()
     this.isTouching = function( gameObject )
     { 
         // #Are they touching?
-        return ( Math.abs(this.x - gameObject.x) < 8 &&
-                 Math.abs(this.y - gameObject.y) < 8); 
+        return ( Math.abs(this.x - gameObject.x) < 16 &&
+                 Math.abs(this.y - gameObject.y) < 16); 
     };
 }
 
